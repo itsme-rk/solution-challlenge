@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Prediction</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px; /* Adjust as needed */
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forest Fire Prediction</h1>
+    <form action="/predict" method="post">
+        <!-- Add input fields for user input -->
+        <label for="Temperature">Temperature:</label>
+        <input type="number" name="Temperature" required><br>
+
+        <label for="Humidity">Humidity:</label>
+        <input type="number" name="Humidity" required><br>
+
+        <label for="WindSpeed">Wind Speed:</label>
+        <input type="number" name="WindSpeed" required><br>
+
+        <label for="Precipitation">Precipitation:</label>
+        <input type="number" name="Precipitation" required><br>
+
+        <label for="SoilMoisture">Soil Moisture:</label>
+        <input type="number" name="SoilMoisture" required><br>
+
+        <label for="Topography">Topography:</label>
+        <input type="number" name="Topography" required><br>
+
+        <label for="VegetationType">Vegetation Type:</label>
+        <input type="text" name="VegetationType" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
